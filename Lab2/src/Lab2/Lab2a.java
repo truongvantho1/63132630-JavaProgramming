@@ -21,7 +21,7 @@ public class Lab2a {
 		}else
 		{
 			double x = -b/a;
-			System.out.printf("gia tri cua x la:", +x);
+			System.out.printf("gia tri cua x la:" +x);
 		}
 	}
 }
