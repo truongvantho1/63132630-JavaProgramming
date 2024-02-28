@@ -74,28 +74,71 @@ public class ManHinhTinhToan extends JFrame {
 		textketqua.setColumns(10);
 		
 		JButton btnCong = new JButton("Cộng");
+		btnCong.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				HamSuLyCong();
+			}
+		});
 		btnCong.setBounds(49, 192, 89, 23);
 		contentPane.add(btnCong);
 		
 		JButton btnTru = new JButton("Trừ");
 		btnTru.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				HamSuLyTru();
 			}
 		});
-		btnTru.setBounds(151, 192, 89, 23);
+		btnTru.setBounds(163, 192, 89, 23);
 		contentPane.add(btnTru);
 		
 		JButton btnNhan = new JButton("Nhân");
-		btnNhan.setBounds(250, 192, 89, 23);
+		btnNhan.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				HamSuLyNhan();
+			}
+		});
+		btnNhan.setBounds(278, 192, 89, 23);
 		contentPane.add(btnNhan);
 		
 		JButton btnChia = new JButton("Chia");
 		btnChia.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				HamSuLyChia();
 			}
 		});
-		btnChia.setBounds(349, 192, 89, 23);
+		btnChia.setBounds(397, 192, 89, 23);
 		contentPane.add(btnChia);
+	}
+	void HamSuLyCong() {
+		String str_A = textA.getText();
+		String str_B = textB.getText();
+		double A = Double.parseDouble(str_A);
+		double B = Double.parseDouble(str_B);
+		double Tong = A + B;
+		textketqua.setText(String.valueOf(Tong));
+	}
+	void HamSuLyTru() {
+	    String str_A = textA.getText();
+	    String str_B = textB.getText();
+	    double A = Double.parseDouble(str_A);
+	    double B = Double.parseDouble(str_B);
+	    double Hieu = A - B;
+	    textketqua.setText(String.valueOf(Hieu));
+	}
+	void HamSuLyNhan() {
+	    String str_A = textA.getText();
+	    String str_B = textB.getText();
+	    double A = Double.parseDouble(str_A);
+	    double B = Double.parseDouble(str_B);
+	    double Tich = A * B;
+	    textketqua.setText(String.valueOf(Tich));
+	}
+	void HamSuLyChia() {
+	    String str_A = textA.getText();
+	    String str_B = textB.getText();
+	    double A = Double.parseDouble(str_A);
+	    double B = Double.parseDouble(str_B);
+	    double Thuong = A / B;
+	    textketqua.setText(String.valueOf(Thuong));
 	}
 }
