@@ -16,11 +16,8 @@ public class ManHinhTinhToan extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
 	private JTextField textA;
 	private JTextField textB;
-	private JTextField textField_4;
 	private JTextField textketqua;
 
 	
@@ -52,19 +49,9 @@ public class ManHinhTinhToan extends JFrame {
 		lblNewLabel.setBounds(49, 36, 89, 29);
 		contentPane.add(lblNewLabel);
 		
-		textField = new JTextField();
-		textField.setBounds(42, 40, 96, 20);
-		contentPane.add(textField);
-		textField.setColumns(10);
-		
 		JLabel lblNewLabel_1 = new JLabel("nhap so b");
 		lblNewLabel_1.setBounds(49, 112, 89, 29);
 		contentPane.add(lblNewLabel_1);
-		
-		textField_1 = new JTextField();
-		textField_1.setBounds(42, 116, 96, 20);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
 		
 		textA = new JTextField();
 		textA.setBounds(196, 40, 278, 20);
@@ -79,11 +66,6 @@ public class ManHinhTinhToan extends JFrame {
 		JLabel lblNewLabel_2 = new JLabel("Kết quả");
 		lblNewLabel_2.setBounds(24, 276, 49, 14);
 		contentPane.add(lblNewLabel_2);
-		
-		textField_4 = new JTextField();
-		textField_4.setBounds(0, 273, 96, 20);
-		contentPane.add(textField_4);
-		textField_4.setColumns(10);
 		
 		textketqua = new JTextField();
 		textketqua.setEditable(false);
@@ -101,7 +83,7 @@ public class ManHinhTinhToan extends JFrame {
 				
 			}
 		});
-		btnTru.setBounds(145, 192, 89, 23);
+		btnTru.setBounds(151, 192, 89, 23);
 		contentPane.add(btnTru);
 		
 		JButton btnNhan = new JButton("Nhân");
