@@ -76,6 +76,9 @@ public class LOGIN extends JFrame {
                     textDangnhap.setText("");
                     textMatKhau.setText("");
                     textDangnhap.requestFocus();
+                    HomeFrame homePage = new HomeFrame();
+        			homePage.setVisible(true);
+        			setVisible(false);
                 }
             }
         });
